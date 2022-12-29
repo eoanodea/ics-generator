@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "ICS Generator",
+    "version": "1.0",
+    "description": "Here's a description",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://mail.google.com/*",
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ]
+}
